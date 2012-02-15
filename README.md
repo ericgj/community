@@ -17,7 +17,9 @@ To install a development version of Community, follow these steps:
 2. Clone the fork to your computer
 3. If you don't already have bundler installed, get it by running `gem install bundler`
 4. Run `bundle install` to install all of the project's dependencies
-5. Finally, run `rake setup` to create the required config files, create the database, and seed it with data
+5. Run `bundle exec rake setup` to create the required config files
+6. Edit `config/database.yml`, and make sure your database server is running
+7. Finally, run `bundle exec rake setup` again to create the database, and seed it with data
 
 To make things even easier, you can copy and paste this into your terminal once you've got the project cloned to your computer
 
